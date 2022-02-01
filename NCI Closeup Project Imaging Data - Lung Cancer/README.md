@@ -51,7 +51,7 @@ Comment:
 Notes on Desmoplasia:
 In [], the association between desmoplasia and the risk of relapse was found to be stronger in the LUAD subgroup (n=116) than the NSCLC group (n=165) and High Desmoplasia tumors had significantly higher rate of relapse than those with Low Desmoplasia (HR = 2.45; P value = .011).
 
-### [This image](https://visualsonline.cancer.gov/details.cfm?imageid=10576) was originally submitted as part of the 2016 NCI Cancer Close Up project and selected for exhibit.
+#### [This image](https://visualsonline.cancer.gov/details.cfm?imageid=10576) was originally submitted as part of the 2016 NCI Cancer Close Up project and selected for exhibit.
 
 
 ## Title: Lung Cancer Metastasis
