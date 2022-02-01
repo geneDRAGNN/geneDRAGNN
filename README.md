@@ -2,7 +2,7 @@
 The related code, visuals and datasets related to the Queen's University Project X research project in 2022.
 
 ## Label Data Sources
-### The label data for LUAD was retrieved from [The Disease Gene Network Portal (DisGeNet)]() in November 2021
+### The label data for LUAD was retrieved from [The Disease Gene Network Portal (DisGeNet)]() in November 2021.
 
 The [Summary of GDAs](https://www.disgenet.org/browser/0/1/0/C0152013/) contains information about the Evidence Index and other types of GDA's.
 
@@ -17,7 +17,7 @@ We changed the settings in the NIH database to show 100 genes per page and manua
 
 #### Conversions from gene ID to ensembl ID are available from [g:profiler](https://biit.cs.ut.ee/gprofiler/convert).
 
-### In November 2021, Node data and features were also retrieved from the [Human Protein Atlas](https://www.proteinatlas.org/)
+### In November 2021, Node data and features were also retrieved from the [Human Protein Atlas](https://www.proteinatlas.org/).
 
 ## Edges/Protein Data Sources
 
