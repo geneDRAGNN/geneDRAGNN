@@ -12,7 +12,7 @@ The [Evidences of GDAs](https://www.disgenet.org/browser/0/1/1/C0152013/_a/_b./)
 ## Node/Gene Data Sources
 ### In November 2021, Node data and features were retrieved from [TCGA-LUAD project](https://portal.gdc.cancer.gov/exploration?filters=%7B%22content%22%3A%5B%7B%22content%22%3A%7B%22field%22%3A%22cases.project.project_id%22%2C%22value%22%3A%5B%22TCGA-LUAD%22%5D%7D%2C%22op%22%3A%22in%22%7D%5D%2C%22op%22%3A%22and%22%7D&genesTable_offset=21000&genesTable_size=100&searchTableTab=genes).
 
-##### The NIH does not permit one to download the entire dataset with one click.  **including the # of cases in the cohort and number of mutations in the GDC portal.**
+### The NIH does not permit one to download the entire dataset in one click  **(including the # of cases in the cohort and number of mutations in the GDC portal).**
 We changed the settings in the NIH database to show 100 genes per page and manually downloaded each subset of 100 genes to compile the dataset into the form we used for aggregation.
 
 #### Conversions from gene ID to ensembl ID are available from [g:profiler](https://biit.cs.ut.ee/gprofiler/convert).
