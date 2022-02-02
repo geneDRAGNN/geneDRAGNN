@@ -5,6 +5,9 @@
 
 <img width="1059" alt="Screen Shot 2022-02-02 at 3 15 26 AM" src="https://user-images.githubusercontent.com/85202161/152117149-c73e304a-faf9-4961-9ee1-53ced66d4cf3.png">
 
+![image](https://user-images.githubusercontent.com/85202161/152122935-980b955f-e2cd-4834-8ac7-a4ab92e2c7de.png)
+
+
 
 # Graph Neural Network Architectures:
 The related code, visuals and datasets related to the Queen's University Project X research project in 2022. This visuals and descriptions of the GNNs in this section are retrieved from [this Graph Neural Net blog on Github](https://github.com/hanikhatib/graph_nets) 
