@@ -31,8 +31,6 @@ Codon 12 has been associated with worse outcomes than the codon 13 in KRAS mutat
 The processes of autophagy and apoptosis are crucial in the pathophysiology of NSCLC and LUAD in particular, as it accounts for between 40-70% of all NSCLC. [[6]](https://pubmed.ncbi.nlm.nih.gov/25712477/) Generally, the inhibition of autophagy limits the ability of cells to overcome stress and maintain homeostasis, but it can also promote cell death when inhibited by oncoproteins such as AKT, PI3K, Bcl-1 and mutant p53. Moreover, autophagy functions as a double-edged sword in carcinogenesis.”
 
 
-
-
 ## Title: [Non-Small Lung Cancer After Cisplatin Treatment](https://visualsonline.cancer.gov/details.cfm?imageid=10549)
 
 #### This image was originally submitted as part of the 2016 NCI Cancer Close Up project and selected for exhibit. [[7]](https://visualsonline.cancer.gov/details.cfm?imageid=10549)
@@ -88,7 +86,7 @@ LKB1 mutates in 20-30% of non-small cell lung cancers (NSCLCs) and evidence sugg
 
 #### This image was originally submitted as part of the 2016 NCI Cancer Close Up project. [[15]](https://visualsonline.cancer.gov/details.cfm?imageid=10604)
 
-
+![nci-vol-10604-72 (1)](https://user-images.githubusercontent.com/85202161/152072603-38d080d7-042e-42b9-94a6-2493a56afb0a.jpg)
 
 
 ### Description:
