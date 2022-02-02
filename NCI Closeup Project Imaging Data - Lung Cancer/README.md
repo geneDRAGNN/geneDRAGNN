@@ -93,4 +93,4 @@ LKB1 mutates in 20-30% of non-small cell lung cancers (NSCLCs) and evidence sugg
 "A differential interference contrast image illustrating the aggressive shape of live, migrating non-small cell lung cancer cells. Therapies that are able to stop the migration of tumor cells can help stem or prevent the spread of cancer (metastasis)." [15]
 
 ### Notes on Metastatis:
-LKB1 mutates in 20-30% of non-small cell lung cancers (NSCLCs) and evidence suggests it is a primary driver of Metastatis, which is a strong reason why the survival rate of NSCLC is merely 5 years. [[16]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2995373/#:~:text=The%20tumor%20suppressor%20LKB1%20is,in%20NSCLC%2C%20especially%20NSCLC%20metastasis.) Ultimately, LKB1 is a tumor suppressor and ranks as the 3rd highest mutated gene in LUAD after p53 and Ras. [16]
+LKB1 mutates in 20-30% of non-small cell lung cancers (NSCLCs) and evidence suggests it is a primary driver of Metastatis, which is a strong reason why the survival rate of NSCLC is merely 5 years. [13] Ultimately, LKB1 is a tumor suppressor and ranks as the 3rd highest mutated gene in LUAD after p53 and Ras. [13]
