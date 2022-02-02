@@ -7,7 +7,7 @@ The scripts and functions required for processing the required datasets into the
 A notebook that conducts the full data processing from start to finish by importing the features, edges and labels separately and providing the necessary operations to make the final datasets.
 
 ## Usable Functions
-Note: Functions were made for the use of the November 2021 data and may not function with updated datasets. Please email ciaran.bylesho@queensu.ca to receive the required datasets to rerun the experiments.
+Note: Functions were made for the use of the November 2021 data and may not function with updated datasets. Please email ciaran.bylesho@gmail.ca to receive the required datasets to rerun the experiments.
 
 ### create_node2vec_embeddings.py
 Imports the pecanpy library and applys an optimized node2vec to the target edgelist to create embeddings.
