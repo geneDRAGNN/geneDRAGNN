@@ -4,7 +4,7 @@
 
 #### This image was originally submitted as part of the 2016 NCI Cancer Close Up project and selected for exhibit. [[1]](https://visualsonline.cancer.gov/details.cfm?imageid=10549)
 
-![nci-vol-10549-150](https://user-images.githubusercontent.com/85202161/152072279-3c4b81ec-dfa6-412f-a4ac-ba7d97319d3b.jpg)
+![nci-vol-10549-72](https://user-images.githubusercontent.com/85202161/152072727-73eac38d-ba2e-4711-848a-35040403c9db.jpg)
 
 
 ### Description:
@@ -90,7 +90,7 @@ LKB1 mutates in 20-30% of non-small cell lung cancers (NSCLCs) and evidence sugg
 
 
 ### Description:
-A differential interference contrast image illustrating the aggressive shape of live, migrating non-small cell lung cancer cells. Therapies that are able to stop the migration of tumor cells can help stem or prevent the spread of cancer (metastasis). [15]
+"A differential interference contrast image illustrating the aggressive shape of live, migrating non-small cell lung cancer cells. Therapies that are able to stop the migration of tumor cells can help stem or prevent the spread of cancer (metastasis)." [15]
 Comment:
 
 ### Notes on Metastatis:
