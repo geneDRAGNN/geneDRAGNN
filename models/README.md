@@ -1,4 +1,3 @@
-##### projectx Queen's
 # Graph Neural Networks
 The related code, visuals and datasets related to the Queen's University Project X research project in 2022. This visuals of this section are retrieved from [this Graph Neural Net blog on Github](https://github.com/hanikhatib/graph_nets) 
 
