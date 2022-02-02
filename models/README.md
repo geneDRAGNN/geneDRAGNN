@@ -1,7 +1,7 @@
-# ProjectX_Queens
+##### projectx Queen's
+# Label Data Sources
 The related code, visuals and datasets related to the Queen's University Project X research project in 2022.
 
-## Label Data Sources
 ### The label data for LUAD was retrieved from [The Disease Gene Network Portal (DisGeNet)]() in November 2021.
 
 The [Summary of GDAs](https://www.disgenet.org/browser/0/1/0/C0152013/) contains information about the Evidence Index and other types of GDA's.
