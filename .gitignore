@@ -3,3 +3,4 @@
 /data/raw_data/*.tsv
 /data/final_data/*.csv
 /data/final_data/*.edg
+/data/final_data/*.tsv
