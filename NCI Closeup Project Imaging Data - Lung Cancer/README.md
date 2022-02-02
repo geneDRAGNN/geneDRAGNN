@@ -78,7 +78,8 @@ In [[11]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6458340/), the associatio
 
 ### Description:
 “This image shows how lung cancer cells invade surrounding tissues and start to spread (metastasis). These lung cancer cells have a mutation of a gene called LKB1 (in green) that promotes invasion. Actin, a cytoskeletal protein, is in red, and the cell nucleus is blue. These H157 lung cancer cells are expressing a GFP-tagged piece of LKB1 to disrupt its normal function. Spheroids of these cells were embedded in a 3-D collagen matrix with cells invading for 24 hours.”[12]
-Notes on Metastatis:
+
+### Notes on Metastatis:
 LKB1 mutates in 20-30% of non-small cell lung cancers (NSCLCs) and evidence suggests it is a primary driver of Metastatis. [[13]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2995373/#:~:text=The%20tumor%20suppressor%20LKB1%20is,in%20NSCLC%2C%20especially%20NSCLC%20metastasis.) Metastatis is a large reason why the survival rate of NSCLC is merely 5 years.  Ultimately, LKB1 is a tumor suppressor and ranks as the 3rd highest mutated gene in LUAD after p53 and Ras. The expression of H157 in the above image, however, may be an indication of lung squamous cell carcinoma. [[14]](https://visualsonline.cancer.gov/details.cfm?imageid=10578)
 
 
