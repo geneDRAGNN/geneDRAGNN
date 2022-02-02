@@ -28,7 +28,7 @@ Codon 12 has been associated with worse outcomes than the codon 13 in KRAS mutat
 “Autophagy represents a cell's response to chemotherapy and radiation that may be one component of resistance to therapy. H460 non-small cell lung cancer cells were exposed to the antitumor drug, etoposide. The image shows the H460 cells (in green) containing acidic autophagic vauoles (orange) that are extranuclear. The small bright green bodies are likely to be micronuclei.” [5]
 
 ### Notes on Autophagy:
-The processes of autophagy and apoptosis are crucial in the pathophysiology of NSCLC and LUAD in particular, as it accounts for between 40-70% of all NSCLC. [[6]](https://pubmed.ncbi.nlm.nih.gov/25712477/) Generally, the inhibition of autophagy limits the ability of cells to overcome stress and maintain homeostasis, but it can also promote cell death when inhibited by oncoproteins such as AKT, PI3K, Bcl-1 and mutant p53. Moreover, autophagy functions as a double-edged sword in carcinogenesis.”
+The processes of autophagy and apoptosis are crucial in the pathophysiology of NSCLC and LUAD in particular, as it accounts for between 40-70% of all NSCLC. [[6]](https://pubmed.ncbi.nlm.nih.gov/25712477/) Generally, the inhibition of autophagy limits the ability of cells to overcome stress and maintain homeostasis, but it can also promote cell death when inhibited by oncoproteins such as AKT, PI3K, Bcl-1 and mutant p53. [6] Moreover, autophagy functions as a double-edged sword in carcinogenesis. [6]
 
 
 ## Title: [Non-Small Lung Cancer After Cisplatin Treatment](https://visualsonline.cancer.gov/details.cfm?imageid=10549)
