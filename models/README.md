@@ -15,25 +15,29 @@ The related code, visuals and datasets related to the Queen's University Project
 
 ### "GCNs draw on the idea of Convolution Neural Networks re-defining them for the non-euclidean data domain. They are convolutional, because filter parameters are typically shared over all locations in the graph unlike typical GNNs." [[1]](https://github.com/hanikhatib/graph_nets).
 
+
 ## [GraphSAGE(SAmple and aggreGatE](https://dsgiitr.com/blogs/graphsage/)
 ![GraphSAGE_cover](https://user-images.githubusercontent.com/85202161/152111614-edef5e77-94d3-40de-821e-a46b6a6347b6.jpeg)
 
 ### Previous approaches are transductive and don't naturally generalize to unseen nodes. GraphSAGE is an inductive framework leveraging node feature information to efficiently generate node embeddings.
+
 
 ## [ChebNet: CNN on Graphs with Fast Localized Spectral Filtering](https://dsgiitr.com/blogs/chebnet/)
 ![ChebNet_Cover](https://user-images.githubusercontent.com/85202161/152111710-503a436d-c054-45e4-84e7-0136ba14b05f.jpeg)
 
 ### "ChebNet is a formulation of CNNs in the context of spectral graph theory. [1](https://github.com/hanikhatib/graph_nets).
 
+
 ## [Graph Attention Netorks](https://dsgiitr.com/blogs/gat/)
 ![GAT_Cover](https://user-images.githubusercontent.com/85202161/152111692-cdfdb32e-184d-4d2e-aa9b-7069322ecb80.jpeg)
 
 ### "GAT is able to attend over their neighborhoods’ features, implicitly specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation or depending on knowing the graph structure upfront." [1](https://github.com/hanikhatib/graph_nets)
 
+
 ## [Simple Graph Convolutional Networks](https://github.com/Tiiiger/SGC)
 ![SGConv](https://user-images.githubusercontent.com/85202161/152112089-bb6a3444-5ddc-4f2c-a4c8-2905315f01a2.jpeg)
 
-### "SGC removes the nonlinearities and collapes the weight matrices in Graph Convolutional Networks (GCNs) and is essentially a linear model"[[2]](https://github.com/Tiiiger/SGC)
+### "SGC removes the nonlinearities and collapes the weight matrices in Graph Convolutional Networks (GCNs) and is essentially a linear model" [[2]](https://github.com/Tiiiger/SGC)
 
 
 ## [Topology Adaptive Graph Concolutional Network](https://medium.com/@lavenderchiang/topology-adaptive-graph-cnn-8c4dffff858e)
