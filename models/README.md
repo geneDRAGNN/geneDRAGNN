@@ -1,4 +1,3 @@
-##### projectx Queen's
 # Final Results
 
 #### Results table: The performance achieved by each model was tested. The baseline models use only node features–features about the genes themselves. The graph-based models use features about the gene-gene interaction network (either via node2vec embeddings or a GNN processing the graph directly). The metrics are averaged over multiple trials. Some models were evaluated on fewer than the full 100 trials due time and computational constraints. The more promising models were evaluated on the full 100 trials. The constraint for most GNNs was computational memory, as our functional protein network was too large for our limited computing resources.
@@ -17,7 +16,7 @@
 
 
 # Graph Neural Network Architectures:
-The related code, visuals and datasets related to the Queen's University Project X research project in 2022. This visuals and descriptions of the GNNs in this section are retrieved from [this Graph Neural Net blog on Github](https://github.com/hanikhatib/graph_nets) 
+The related code, visuals and descriptions of the GNNs in this section are mainly retrieved from [this Graph Neural Net blog on Github](https://github.com/hanikhatib/graph_nets) 
 
 
 ## [Graph Convolutional Network (GCN)](https://dsgiitr.com/blogs/gcn/)
