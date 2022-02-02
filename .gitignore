@@ -1,1 +1,4 @@
-/data/*
+/data/*.csv
+/data/*.tsv
+/data/*.txt
+/data/*.edg
