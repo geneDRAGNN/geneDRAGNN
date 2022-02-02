@@ -19,19 +19,19 @@ The related code, visuals and datasets related to the Queen's University Project
 ## [GraphSAGE(SAmple and aggreGatE](https://dsgiitr.com/blogs/graphsage/)
 ![GraphSAGE_cover](https://user-images.githubusercontent.com/85202161/152111614-edef5e77-94d3-40de-821e-a46b6a6347b6.jpeg)
 
-### Previous approaches are transductive and don't naturally generalize to unseen nodes. GraphSAGE is an inductive framework leveraging node feature information to efficiently generate node embeddings.
+### "Previous approaches are transductive and don't naturally generalize to unseen nodes. GraphSAGE is an inductive framework leveraging node feature information to efficiently generate node embeddings." [[1]](https://github.com/hanikhatib/graph_nets).
 
 
 ## [ChebNet: CNN on Graphs with Fast Localized Spectral Filtering](https://dsgiitr.com/blogs/chebnet/)
 ![ChebNet_Cover](https://user-images.githubusercontent.com/85202161/152111710-503a436d-c054-45e4-84e7-0136ba14b05f.jpeg)
 
-### "ChebNet is a formulation of CNNs in the context of spectral graph theory. [1](https://github.com/hanikhatib/graph_nets).
+### "ChebNet is a formulation of CNNs in the context of spectral graph theory. [[1]]
 
 
 ## [Graph Attention Netorks](https://dsgiitr.com/blogs/gat/)
 ![GAT_Cover](https://user-images.githubusercontent.com/85202161/152111692-cdfdb32e-184d-4d2e-aa9b-7069322ecb80.jpeg)
 
-### "GAT is able to attend over their neighborhoods’ features, implicitly specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation or depending on knowing the graph structure upfront." [1](https://github.com/hanikhatib/graph_nets)
+### "GAT is able to attend over their neighborhoods’ features, implicitly specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation or depending on knowing the graph structure upfront." [[1]](https://github.com/hanikhatib/graph_nets)
 
 
 ## [Simple Graph Convolutional Networks](https://github.com/Tiiiger/SGC)
@@ -43,6 +43,6 @@ The related code, visuals and datasets related to the Queen's University Project
 ## [Topology Adaptive Graph Concolutional Network](https://medium.com/@lavenderchiang/topology-adaptive-graph-cnn-8c4dffff858e)
 ![TAGCN](https://user-images.githubusercontent.com/85202161/152113038-1b62bf19-eb08-436b-9cdd-421af6e496b5.png)
 
-### "The TAGCN not only inherits the properties of convolutions in CNN for grid-structured data, but it is also consistent with convolution as defined in graph signal processing. Since no approximation to the convolution is needed, TAGCN exhibits better performance than existing spectral CNNs on a number of data sets and is also computationally simpler than other recent methods."[[3]](https://arxiv.org/abs/1710.10370)
+### "The TAGCN not only inherits the properties of convolutions in CNN for grid-structured data, but it is also consistent with convolution as defined in graph signal processing. Since no approximation to the convolution is needed, TAGCN exhibits better performance than existing spectral CNNs on a number of data sets and is also computationally simpler than other recent methods." [[3]](https://arxiv.org/abs/1710.10370)
 
 
