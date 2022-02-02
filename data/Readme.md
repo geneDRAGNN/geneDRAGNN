@@ -1,5 +1,5 @@
 # Label Data Sources
-The related code, visuals and datasets related to the Queen's University Project X research project in 2022.
+The related code, visuals and datasets related to the Project X research project in 2022.
 
 ![image](https://user-images.githubusercontent.com/85202161/152131169-aa5a24c0-7856-4e2b-88dd-d66648b7e88f.png)
 ### The label data for LUAD was retrieved from [The Disease Gene Network Portal (DisGeNet)]() in November 2021.
