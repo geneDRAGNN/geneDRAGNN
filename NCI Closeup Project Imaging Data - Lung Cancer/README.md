@@ -4,6 +4,7 @@
 
 #### This image was originally submitted as part of the 2016 NCI Cancer Close Up project and selected for exhibit. [[1]](https://visualsonline.cancer.gov/details.cfm?imageid=10549)
 
+![nci-vol-10549-150](https://user-images.githubusercontent.com/85202161/152072279-3c4b81ec-dfa6-412f-a4ac-ba7d97319d3b.jpg)
 
 
 ### Description:
@@ -13,20 +14,21 @@
 KRAS mutations are detected in between 25-30% of LUAD, with most of the mutations occurring at codon 12 or 13.
 [[2]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4479120/#:~:text=KRAS%20mutation%20and%20survival&text=The%20median%20overall%20survival%20for,CI%201.2%2D1.4%20years) 
 
-Codon 12 has been associated with worse outcomes than the codon 13 in KRAS mutations and other specific point mutations like those in G12V and G12R. [[3]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4479120/#:~:text=KRAS%20mutation%20and%20survival&text=The%20median%20overall%20survival%20for,CI%201.2%2D1.4%20years) As mentioned above, the KRAS gene shows potential for cancer therapies. In May 2021, the FDA approved the first targeted therapy for NSCLC cases with KRAS mutations [[4]](https://www.fda.gov/news-events/press-announcements/fda-approves-first-targeted-therapy-lung-cancer-mutation-previously-considered-resistant-drug).
+Codon 12 has been associated with worse outcomes than the codon 13 in KRAS mutations and other specific point mutations like those in G12V and G12R. [[3]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4479120/#:~:text=KRAS%20mutation%20and%20survival&text=The%20median%20overall%20survival%20for,CI%201.2%2D1.4%20years) As mentioned above, the KRAS gene shows potential for cancer therapies. In May 2021, the FDA approved the first targeted therapy for NSCLC cases with KRAS mutations. [[4]](https://www.fda.gov/news-events/press-announcements/fda-approves-first-targeted-therapy-lung-cancer-mutation-previously-considered-resistant-drug).
 
 
 ## Title: [Lung Cancer Autophagy](https://visualsonline.cancer.gov/details.cfm?imageid=10545) 
 
 #### This image was originally submitted as part of the 2016 NCI Cancer Close Up project and selected for exhibit. [[5]](https://visualsonline.cancer.gov/details.cfm?imageid=10545) [5]
 
+![nci-vol-10545-72](https://user-images.githubusercontent.com/85202161/152072312-86b91589-dc37-4757-82b3-2ac206e5ab3e.jpg)
 
 
 ### Description:
 “Autophagy represents a cell's response to chemotherapy and radiation that may be one component of resistance to therapy. H460 non-small cell lung cancer cells were exposed to the antitumor drug, etoposide. The image shows the H460 cells (in green) containing acidic autophagic vauoles (orange) that are extranuclear. The small bright green bodies are likely to be micronuclei.” [5]
 
 ### Notes on Autophagy:
-The processes of autophagy and apoptosis are crucial in the pathophysiology of NSCLC and LUAD in particular, as it accounts for between 40-70% of all NSCLC. [[6]](https://pubmed.ncbi.nlm.nih.gov/25712477/)Generally, the inhibition of autophagy limits the ability of cells to overcome stress and maintain homeostasis, but it can also promote cell death when inhibited by oncoproteins such as AKT, PI3K, Bcl-1 and mutant p53. Moreover, autophagy functions as a double-edged sword in carcinogenesis.”
+The processes of autophagy and apoptosis are crucial in the pathophysiology of NSCLC and LUAD in particular, as it accounts for between 40-70% of all NSCLC. [[6]](https://pubmed.ncbi.nlm.nih.gov/25712477/) Generally, the inhibition of autophagy limits the ability of cells to overcome stress and maintain homeostasis, but it can also promote cell death when inhibited by oncoproteins such as AKT, PI3K, Bcl-1 and mutant p53. Moreover, autophagy functions as a double-edged sword in carcinogenesis.”
 
 
 
@@ -35,6 +37,7 @@ The processes of autophagy and apoptosis are crucial in the pathophysiology of N
 
 #### This image was originally submitted as part of the 2016 NCI Cancer Close Up project and selected for exhibit. [[7]](https://visualsonline.cancer.gov/details.cfm?imageid=10549)
 
+![nci-vol-10546-150](https://user-images.githubusercontent.com/85202161/152072376-d7023668-92fc-4259-93e2-94391212432f.jpg)
 
 
 ### Description:
@@ -48,17 +51,18 @@ In an Analysis of variance (ANOVA) on cytometry data on A549 and H460 cells, [[8
 
 #### This image was originally submitted as part of the 2016 NCI Cancer Close Up project and selected for exhibit. [[9]](https://visualsonline.cancer.gov/details.cfm?imageid=10542)
 
+![nci-vol-10542-72](https://user-images.githubusercontent.com/85202161/152072412-8ea06ad7-c034-4b24-9b88-6fd193f74aa3.jpg)
+
 
 ### Description:
 “H460 non-small cell lung cancer cells were exposed to the antitumor drug, etoposide. The image shows the H460 cells (in green) containing orange (acidic) auto phagic vauoles that are extranuclear. The small bright green bodies are likely to be micronuclei. Autophagy represents a response to chemotherapy and radiation that may be one component of resistance to therapy.” [9]
-Comment:
 
 
 ## Title: [Lung Cancer Desmoplasia](https://visualsonline.cancer.gov/details.cfm?imageid=10576)
 
 #### This image was originally submitted as part of the 2016 NCI Cancer Close Up project and selected for exhibit. [[10]](https://visualsonline.cancer.gov/details.cfm?imageid=10576)
 
-
+![nci-vol-10576-150](https://user-images.githubusercontent.com/85202161/152072430-6b6b39e8-4670-4fb3-98c4-be22235f482d.jpg)
 
 
 ### Description:
@@ -70,6 +74,9 @@ In [[11]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6458340/), the associatio
 ## Title: [Lung Cancer Metastasis](https://visualsonline.cancer.gov/details.cfm?imageid=10578)
 
 #### This image was originally submitted as part of the 2016 NCI Cancer Close Up project. [[12]](https://visualsonline.cancer.gov/details.cfm?imageid=10578)
+
+![nci-vol-10578-72](https://user-images.githubusercontent.com/85202161/152072481-2ce1d2fc-b096-4ceb-8247-9d27bcb13da6.jpg)
+
 
 ### Description:
 “This image shows how lung cancer cells invade surrounding tissues and start to spread (metastasis). These lung cancer cells have a mutation of a gene called LKB1 (in green) that promotes invasion. Actin, a cytoskeletal protein, is in red, and the cell nucleus is blue. These H157 lung cancer cells are expressing a GFP-tagged piece of LKB1 to disrupt its normal function. Spheroids of these cells were embedded in a 3-D collagen matrix with cells invading for 24 hours.”[12]
