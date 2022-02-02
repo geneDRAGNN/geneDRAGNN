@@ -1,5 +1,5 @@
 ## geneDRAGNN - gene Disease PRioritizAtion using Graph Neural Networks
-The related code, visuals and datasets related to the Queen's University Project X research project in 2022.
+The related code, visuals and datasets related to the Project X research project in 2022.
 
 ### Awni Altabaa, Ciaran Byles-Ho, Fabian Sosa, David Huang, Hani Khatib, Ting Hu
 February 1, 2022
