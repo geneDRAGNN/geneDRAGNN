@@ -1,3 +1,7 @@
+# Original Data from November 2021
+Original data for the experiments run over the Project X timeline can be found at the [here](https://drive.google.com/file/d/1XCg9wQ4xYP97TUzgiOKpriM7LEt4SpBy/view?usp=sharing).
+Please email ciaran.bylesho@gmail.com for any questions
+
 # Label Data Sources
 The related code, visuals and datasets related to the Project X research project in 2022.
 
