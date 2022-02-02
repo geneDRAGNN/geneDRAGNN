@@ -7,7 +7,7 @@
 
 
 # Graph Neural Network Architectures:
-The related code, visuals and datasets related to the Queen's University Project X research project in 2022. This visuals of this section are retrieved from [this Graph Neural Net blog on Github](https://github.com/hanikhatib/graph_nets) 
+The related code, visuals and datasets related to the Queen's University Project X research project in 2022. This visuals and descriptions of the GNNs in this section are retrieved from [this Graph Neural Net blog on Github](https://github.com/hanikhatib/graph_nets) 
 
 
 ## [Graph Convolutional Networks (GCN)](https://dsgiitr.com/blogs/gcn/)
@@ -25,7 +25,7 @@ The related code, visuals and datasets related to the Queen's University Project
 ## [ChebNet: CNN on Graphs with Fast Localized Spectral Filtering](https://dsgiitr.com/blogs/chebnet/)
 ![ChebNet_Cover](https://user-images.githubusercontent.com/85202161/152111710-503a436d-c054-45e4-84e7-0136ba14b05f.jpeg)
 
-### "ChebNet is a formulation of CNNs in the context of spectral graph theory. [[3]](https://dsgiitr.com/blogs/chebnet/)
+### "ChebNet is a formulation of CNNs in the context of spectral graph theory." [[3]](https://dsgiitr.com/blogs/chebnet/)
 
 
 ## [Graph Attention Netorks](https://dsgiitr.com/blogs/gat/)
