@@ -15,8 +15,6 @@
 
 <img width="719" alt="KEGG Pathway Enrichment Analysis" src="https://user-images.githubusercontent.com/85202161/152126599-0de0bcd4-1cab-49be-a04a-795d547d756c.png">
 
-<img width="793" alt="Screen Shot 2022-02-02 at 4 19 56 AM" src="https://user-images.githubusercontent.com/85202161/152126646-0968eac9-fc71-40e6-971f-1e7b3549e8e9.png">
-
 
 # Graph Neural Network Architectures:
 The related code, visuals and datasets related to the Queen's University Project X research project in 2022. This visuals and descriptions of the GNNs in this section are retrieved from [this Graph Neural Net blog on Github](https://github.com/hanikhatib/graph_nets) 
