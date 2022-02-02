@@ -1,4 +1,6 @@
-# Graph Neural Networks
+##### projectx Queen's
+
+# Graph Neural Network Models:
 The related code, visuals and datasets related to the Queen's University Project X research project in 2022. This visuals of this section are retrieved from [this Graph Neural Net blog on Github](https://github.com/hanikhatib/graph_nets) 
 
 
@@ -32,9 +34,11 @@ The related code, visuals and datasets related to the Queen's University Project
 ### "SGC removes the nonlinearities and collapes the weight matrices in Graph Convolutional Networks (GCNs) and is essentially a linear model" [[2]](https://github.com/Tiiiger/SGC)
 
 
-## [Topology Adaptive Graph Concolutional Network](https://medium.com/@lavenderchiang/topology-adaptive-graph-cnn-8c4dffff858e)
+## [Topology Adaptive Graph Convolutional Network](https://medium.com/@lavenderchiang/topology-adaptive-graph-cnn-8c4dffff858e)
 ![TAGCN](https://user-images.githubusercontent.com/85202161/152113038-1b62bf19-eb08-436b-9cdd-421af6e496b5.png)
 
 ### "The TAGCN not only inherits the properties of convolutions in CNN for grid-structured data, but it is also consistent with convolution as defined in graph signal processing. Since no approximation to the convolution is needed, TAGCN exhibits better performance than existing spectral CNNs on a number of data sets and is also computationally simpler than other recent methods." [[3]](https://arxiv.org/abs/1710.10370)
 
+# Results
 
+##
