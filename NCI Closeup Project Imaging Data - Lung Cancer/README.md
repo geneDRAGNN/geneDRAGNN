@@ -19,7 +19,7 @@ Codon 12 has been associated with worse outcomes than the codon 13 in KRAS mutat
 
 ## Title: [Lung Cancer Autophagy](https://visualsonline.cancer.gov/details.cfm?imageid=10545) 
 
-#### This image was originally submitted as part of the 2016 NCI Cancer Close Up project and selected for exhibit. [[5]](https://visualsonline.cancer.gov/details.cfm?imageid=10545) [5]
+#### This image was originally submitted as part of the 2016 NCI Cancer Close Up project and selected for exhibit. [[5]](https://visualsonline.cancer.gov/details.cfm?imageid=10545)
 
 ![nci-vol-10545-72](https://user-images.githubusercontent.com/85202161/152072312-86b91589-dc37-4757-82b3-2ac206e5ab3e.jpg)
 
