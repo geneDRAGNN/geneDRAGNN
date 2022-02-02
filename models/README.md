@@ -1,13 +1,6 @@
 ##### projectx Queen's
 # Graph Neural Networks
-The related code, visuals and datasets related to the Queen's University Project X research project in 2022. This visuals of this section are retrieved from [this Graph Neural Net blog on Github](@misc{graph_nets,
-  author = {A. Dagar and A. Pant and S. Gupta and S. Chandel},
-  title = {graph_nets},
-  year = {2020},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/dsgiitr/graph_nets}},
-})
+The related code, visuals and datasets related to the Queen's University Project X research project in 2022. This visuals of this section are retrieved from [this Graph Neural Net blog on Github](https://github.com/hanikhatib/graph_nets) 
 
 
 ## [Graph Convolutional Networks (GCN)](https://dsgiitr.com/blogs/gcn/)
