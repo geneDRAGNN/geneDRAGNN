@@ -65,8 +65,9 @@ In an Analysis of variance (ANOVA) on cytometry data on A549 and H460 cells, [[8
 
 ### Description:
 “As shown here, lung cancer is associated with a vast stromal desmoplastic reaction (the "neighborhood") in which the connective tissue, associated with the tumor, thickens similarly to scars. Cancer is in red; cell nuclei in cyan; stroma/desmoplasia in green; and an active stroma-specific marker in purple.”
-Notes on Desmoplasia:
-In [[11]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6458340/), the association between desmoplasia and the risk of relapse was found to be stronger in the LUAD subgroup (n=116) than the NSCLC group (n=165) and High Desmoplasia tumors had significantly higher rate of relapse than those with Low Desmoplasia (HR = 2.45; P value = .011).
+
+### Notes on Desmoplasia:
+In [[11]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6458340/), the association between desmoplasia and the risk of relapse was found to be stronger in the LUAD subgroup (n=116) than the NSCLC group (n=165) and High Desmoplasia tumors had significantly higher rate of relapse than those with Low Desmoplasia (HR = 2.45; P value = .011). [10]
 
 
 ## Title: [Lung Cancer Metastasis](https://visualsonline.cancer.gov/details.cfm?imageid=10578)
