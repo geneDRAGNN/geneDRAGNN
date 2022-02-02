@@ -13,7 +13,7 @@ The related code, visuals and datasets related to the Queen's University Project
 ## [Graph Convolutional Networks (GCN)](https://dsgiitr.com/blogs/gcn/)
 ![gcn_architecture](https://user-images.githubusercontent.com/85202161/152111587-6dfda848-7d1c-4087-a858-a5da08cc844d.png)
 
-### "GCNs draw on the idea of Convolution Neural Networks re-defining them for the non-euclidean data domain. They are convolutional, because filter parameters are typically shared over all locations in the graph unlike typical GNNs." [[1]](https://dsgiitr.com/blogs/gcn/).
+### "GCNs draw on the idea of Convolution Neural Networks re-defining them for the non-euclidean data domain. They are convolutional, because filter parameters are typically shared over all locations in the graph unlike typical GNNs." [[1]](https://dsgiitr.com/blogs/gcn/)
 
 
 ## [GraphSAGE(SAmple and aggreGatE](https://dsgiitr.com/blogs/graphsage/)
