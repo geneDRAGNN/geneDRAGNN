@@ -26,9 +26,3 @@ We changed the settings in the NIH database to show 100 genes per page and manua
 It is important to note we applied a homo sapien filter, and chose the following file: *9606.protein.links.detailed.v11.5.txt.gz (115.5 Mb)*
 
 
-
-
-![(0 6 if Nsources,  2](https://user-images.githubusercontent.com/85202161/152104621-bb9c6b54-1d1f-4cf3-9bf2-655fbd3092a8.png)
-![supporting the genevariant-disease associations  This index is computed for the sources](https://user-images.githubusercontent.com/85202161/152104635-92c67ca8-e216-4e02-952f-fd54f27cceff.png)
-
-
