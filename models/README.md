@@ -1,7 +1,7 @@
 ##### projectx Queen's
 # Final Results
 
-#### Results table: The performance achieved by each model was tested. The baseline models use only node features–features about the genes themselves. The graph-based models use features about the gene-gene interaction network (either via node2vec embeddings or a GNN processing the graph directly). The metrics are averaged over multiple trials. Some models were evaluated on fewer than the full 100 trials due time and computational constraints. The more promising models were evaluated on the full 100 trials. The constraint for most GNNs was our computational memory, as our functional protein network was too large for our limited computing resources to handle.
+#### Results table: The performance achieved by each model was tested. The baseline models use only node features–features about the genes themselves. The graph-based models use features about the gene-gene interaction network (either via node2vec embeddings or a GNN processing the graph directly). The metrics are averaged over multiple trials. Some models were evaluated on fewer than the full 100 trials due time and computational constraints. The more promising models were evaluated on the full 100 trials. The constraint for most GNNs was computational memory, as our functional protein network was too large for our limited computing resources.
 
 <img width="1059" alt="Screen Shot 2022-02-02 at 3 15 26 AM" src="https://user-images.githubusercontent.com/85202161/152117149-c73e304a-faf9-4961-9ee1-53ced66d4cf3.png">
 
