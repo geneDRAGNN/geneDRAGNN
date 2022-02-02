@@ -40,5 +40,6 @@ The related code, visuals and datasets related to the Queen's University Project
 ### "The TAGCN not only inherits the properties of convolutions in CNN for grid-structured data, but it is also consistent with convolution as defined in graph signal processing. Since no approximation to the convolution is needed, TAGCN exhibits better performance than existing spectral CNNs on a number of data sets and is also computationally simpler than other recent methods." [[3]](https://arxiv.org/abs/1710.10370)
 
 # Results
+#### Results table: The performance achieved by each model was tested. The baseline models use only node features–features about the genes themselves. The graph-based models use features about the gene-gene interaction network (either via node2vec embeddings or a GNN processing the graph directly). The metrics are averaged over multiple trials. Some models were evaluated on fewer than the full 100 trials due time and computational constraints. The more promising models were evaluated on the full 100 trials. The constraint for most GNNs was our computational memory, as our functional protein network was too large for our limited computing resources to handle.
+![image](https://user-images.githubusercontent.com/85202161/152115862-9fc2250c-8ec5-424c-b61c-552ba6833361.png)
 
-##
