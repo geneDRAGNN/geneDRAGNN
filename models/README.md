@@ -1,28 +1,38 @@
 ##### projectx Queen's
-# Label Data Sources
-The related code, visuals and datasets related to the Queen's University Project X research project in 2022.
+# Graph Neural Networks
+The related code, visuals and datasets related to the Queen's University Project X research project in 2022. This visuals of this section are retrieved from [this Graph Neural Net blog on Github](https://github.com/hanikhatib/graph_nets) 
+@misc{graph_nets,
+  author = {A. Dagar and A. Pant and S. Gupta and S. Chandel},
+  title = {graph_nets},
+  year = {2020},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/dsgiitr/graph_nets}},
+}
 
-### The label data for LUAD was retrieved from [The Disease Gene Network Portal (DisGeNet)]() in November 2021.
 
-The [Summary of GDAs](https://www.disgenet.org/browser/0/1/0/C0152013/) contains information about the Evidence Index and other types of GDA's.
+## Graph Convolutional Networks (GCN)
+![gcn_architecture](https://user-images.githubusercontent.com/85202161/152111587-6dfda848-7d1c-4087-a858-a5da08cc844d.png)
 
-The [Evidences of GDAs](https://www.disgenet.org/browser/0/1/1/C0152013/_a/_b./) contains information about the GDA score, the sentence supporting the association and other types of biomarkers that help structure the labels used to train the model.
 
-## GDA Score and Evidence Index Calculations
+### "GCNs draw on the idea of Convolution Neural Networks re-defining them for the non-euclidean data domain. They are convolutional, because filter parameters are typically shared over all locations in the graph unlike typical GNNs." [1]().
 
-## Node/Gene Data Sources
-### In November 2021, Node data and features were retrieved from [TCGA-LUAD project](https://portal.gdc.cancer.gov/exploration?filters=%7B%22content%22%3A%5B%7B%22content%22%3A%7B%22field%22%3A%22cases.project.project_id%22%2C%22value%22%3A%5B%22TCGA-LUAD%22%5D%7D%2C%22op%22%3A%22in%22%7D%5D%2C%22op%22%3A%22and%22%7D&genesTable_offset=21000&genesTable_size=100&searchTableTab=genes).
+## Graph SAGE(SAmple and aggreGatE)
+![GraphSAGE_cover](https://user-images.githubusercontent.com/85202161/152111614-edef5e77-94d3-40de-821e-a46b6a6347b6.jpeg)
 
-### The NIH does not permit one to download the entire dataset in one click  **(including the # of cases in the cohort and number of mutations in the GDC portal).**
-We changed the settings in the NIH database to show 100 genes per page and manually downloaded each subset of 100 genes to compile the dataset into the form we used for aggregation.
 
-#### Conversions from gene ID to ensembl ID are available from [g:profiler](https://biit.cs.ut.ee/gprofiler/convert).
+### Previous approaches are transductive and don't naturally generalize to unseen nodes. GraphSAGE is an inductive framework leveraging node feature information to efficiently generate node embeddings.
 
-### In November 2021, Node data and features were also retrieved from the [Human Protein Atlas](https://www.proteinatlas.org/).
+## ChebNet: CNN on Graphs with Fast Localized Spectral Filtering
+![ChebNet_Cover](https://user-images.githubusercontent.com/85202161/152111710-503a436d-c054-45e4-84e7-0136ba14b05f.jpeg)
 
-## Edges/Protein Data Sources
 
-### In November 2021, the protein data and edge features were retrieved from [STRING](https://string-db.org/cgi/download?sessionId=bjDATTcUSCjE&species_text=Homo+sapiens)
-It is important to note we applied a homo sapien filter, and chose the following file: *9606.protein.links.detailed.v11.5.txt.gz (115.5 Mb)*
+### "ChebNet is a formulation of CNNs in the context of spectral graph theory. []().
 
+## Graph Attention Netorks
+![GAT_Cover](https://user-images.githubusercontent.com/85202161/152111692-cdfdb32e-184d-4d2e-aa9b-7069322ecb80.jpeg)
+
+### "GAT is able to attend over their neighborhoods’ features, implicitly specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation or depending on knowing the graph structure upfront."
+
+## Simple Graph Convolutional Networks
 
