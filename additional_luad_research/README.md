@@ -82,7 +82,7 @@ In [[11]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6458340/), the associatio
 
 
 ### Notes on Metastatis:
-LKB1 mutates in 20-30% of non-small cell lung cancers (NSCLCs) and evidence suggests it is a primary driver of Metastatis. [[13]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2995373/#:~:text=The%20tumor%20suppressor%20LKB1%20is,in%20NSCLC%2C%20especially%20NSCLC%20metastasis.) Metastatis is a large reason why the survival rate of NSCLC is merely 5 years.  Ultimately, LKB1 is a tumor suppressor and ranks as the 3rd highest mutated gene in LUAD after p53 and Ras. The expression of H157 in the above image, however, may be an indication of lung squamous cell carcinoma. [[14]](https://visualsonline.cancer.gov/details.cfm?imageid=10578)
+LKB1 mutates in 20-30% of non-small cell lung cancers (NSCLCs) and evidence suggests it is a primary driver of Metastatis. [[13]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2995373/#:~:text=The%20tumor%20suppressor%20LKB1%20is,in%20NSCLC%2C%20especially%20NSCLC%20metastasis.) Metastatis is a large reason why the survival rate of NSCLC is merely 5 years.  Ultimately, LKB1 is a tumor suppressor and ranks as the 3rd highest mutated gene in LUAD after p53 and Ras. The expression of H157 in the above image, however, may be an indication of lung squamous cell carcinoma. [[14]](https://web.expasy.org/cellosaurus/CVCL_0463)
 
 
 ## Title: [Migrating Lung Cancer Cells](https://visualsonline.cancer.gov/details.cfm?imageid=10604)
