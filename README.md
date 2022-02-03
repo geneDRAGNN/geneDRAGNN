@@ -1,7 +1,7 @@
 ## geneDRAGNN - gene Disease PRioritizAtion using Graph Neural Networks
 The related code, visuals and datasets related to the Project X research project in 2022.
 
-### Awni Altabaa, Ciaran Byles-Ho, David Huang, Fabian Sosa, Hani Khatib, Ting Hu
+### Annonymous Authors
 February 1, 2022
 
 ### Abstract
