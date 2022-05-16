@@ -1,6 +1,6 @@
-## geneDRAGNN - gene Disease PRioritizAtion using Graph Neural Networks
+## geneDRAGNN - gene Disease pRioritizAtion using Graph Neural Networks
 
-## Awni Altabaa, David Huang, Ciaran Byles-Ho, Hani Khatib, Fabian Sosa, Ting Hu
+Awni Altabaa, David Huang, Ciaran Byles-Ho, Hani Khatib, Fabian Sosa, Ting Hu
 
 
 ### Abstract
