@@ -1,4 +1,7 @@
-/data/*.csv
-/data/*.tsv
-/data/*.txt
-/data/*.edg
+/data/raw_data/*.csv
+/data/raw_data/*.txt
+/data/raw_data/*.tsv
+/data/final_data/*.csv
+/data/final_data/*.edg
+/data/final_data/*.tsv
+data.zip
