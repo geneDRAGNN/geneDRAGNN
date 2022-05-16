@@ -1,47 +1,44 @@
-# Final Results
+# Models
 
-#### Results table: The performance achieved by each model was tested. The baseline models use only node features–features about the genes themselves. The graph-based models use features about the gene-gene interaction network (either via node2vec embeddings or a GNN processing the graph directly). The metrics are averaged over multiple trials. Some models were evaluated on fewer than the full 100 trials due time and computational constraints. The more promising models were evaluated on the full 100 trials. The constraint for most GNNs was computational memory, as our functional protein network was too large for our limited computing resources.
+This subdirectory contains code related to building and training gene-disease association prediction models.
 
-<img width="1059" alt="Screen Shot 2022-02-02 at 3 15 26 AM" src="https://user-images.githubusercontent.com/85202161/152117149-c73e304a-faf9-4961-9ee1-53ced66d4cf3.png">
+- `baseline_models.py` contains code for training baseline node-only models.
+- `train_baseline_model.ipynb` trains those baseline models.
+- `models.py` contains the architecture definition of the graph neural network models which were examined in the paper.
+` model_utils.py` contains miscellaneous utility functions used while training/evaluating models.
+- `data_utils.py` contains utility functions related to loading data for training and inference.
+- `train_baseline_models.ipynb` trains the GNN models in `models.py`
+- the `model_checkpoints` directory contains trained model checkpoints.
+- `run_gnn_model.ipynb` shows how to build a model from `models.py`, load a pretrained checkpoint, and run it on the dataset.
 
-![image](https://user-images.githubusercontent.com/85202161/152122935-980b955f-e2cd-4834-8ac7-a4ab92e2c7de.png)
+In our experiments, we used a common architecture for our GNNs, and iterated with different types of graph convolution layers. Each GNN takes as input the LS-GIN (represented as an edge list) and the gene ontology features of each node. Information is then propagated from each gene to its neighbours in the LS-GIN through a series of learnable graph convolution layers. With each successive convolution operation, information is propagated one degree further. At the end of these graph convolutions, each gene is left with a vector embedding representing the relevant aspects of its gene-ontology features and its position within the LS-GIN. These embeddings are finally passed through a dense feed-forward neural network which produces the gene-disease association prediction.
 
+<br>
+<center><a href="https://ibb.co/2jCmM1w"><img src="https://i.ibb.co/4jX9Snc/GNN-Architecture-horizontal-v3.jpg" alt="GNN-Architecture-horizontal-v3" border="0"></a></center>
+<br>
 
-# Graph Neural Network Architectures:
-The related code, visuals and descriptions of the GNNs in this section are mainly retrieved from [this Graph Neural Net blog on Github](https://github.com/hanikhatib/graph_nets) 
+The GNN architectures we tested include Simple Graph Convolutional Networks (SGC), Topology Adaptive Graph Convolutional Networks (TAGCN), Cluster-GCN, and GraphSAGE. These all fall under the "convolutional" sub-class of GNNs. This is the simplest class graph convolution operations. It was necessary to restrict our exploration to "convolutional" GNNs due to computational limitations related to the large size of the LS-GIN. The choice of hyperparameters is motivated by the network properties of the LS-GIN. In particular, the diameter of LS-GIN motivates a shallow network of 3 or 4 graph convolution layers.
 
+In general, models trained on LS-GIN embeddings consistently outperformed the baseline models trained exclusively on gene-ontology features. Graph-based models achieved a maximum accuracy of 78%, a maximum precision of 80%, and a maximum recall of 75%. The model which achieved the highest average accuracy was the Support Vector Machine trained on gene-ontology features and node2vec embeddings of LS-GIN with an average accuracy of 78.0% and a standard deviation of 2.2%. The highest performing GNNs achieved an average accuracy of roughly 75%. SGConv achieved an average accuracy of 74.3% with a standard deviation of 2.7%, and an average precision of 74.6%. The SGConv model had the highest positive recall of all GNN models, averaging 75.0%. The topology adaptive graph convolutional network achieved a similar average accuracy of 74.9%, an average precision of 77.8%, and an average recall of 70.6% (though this model was only evaluated on 10 trials). Cluster-GCN and GraphSAGE achieved a lower performance with an average accuracy of 72.6% and 71.4%, respectively.
 
-## [Graph Convolutional Network (GCN)](https://dsgiitr.com/blogs/gcn/)
-![gcn_architecture](https://user-images.githubusercontent.com/85202161/152111587-6dfda848-7d1c-4087-a858-a5da08cc844d.png)
+<br>
 
-### "GCNs draw on the idea of Convolution Neural Networks re-defining them for the non-euclidean data domain. They are convolutional, because filter parameters are typically shared over all locations in the graph unlike typical GNNs." [[1]](https://dsgiitr.com/blogs/gcn/)
+<div align="center">
 
-
-## [Graph SAmple and aggreGatE (GraphSAGE)](https://dsgiitr.com/blogs/graphsage/)
-![GraphSAGE_cover](https://user-images.githubusercontent.com/85202161/152111614-edef5e77-94d3-40de-821e-a46b6a6347b6.jpeg)
-
-### "Previous approaches are transductive and don't naturally generalize to unseen nodes. GraphSAGE is an inductive framework leveraging node feature information to efficiently generate node embeddings." [[2]](https://dsgiitr.com/blogs/graphsage/).
-
-
-## [ChebNet: CNN on Graphs with Fast Localized Spectral Filtering](https://dsgiitr.com/blogs/chebnet/)
-![ChebNet_Cover](https://user-images.githubusercontent.com/85202161/152111710-503a436d-c054-45e4-84e7-0136ba14b05f.jpeg)
-
-### "ChebNet is a formulation of CNNs in the context of spectral graph theory." [[3]](https://dsgiitr.com/blogs/chebnet/)
-
-
-## [Graph Attention Netork (GAT)](https://dsgiitr.com/blogs/gat/)
-![GAT_Cover](https://user-images.githubusercontent.com/85202161/152111692-cdfdb32e-184d-4d2e-aa9b-7069322ecb80.jpeg)
-
-### "GAT is able to attend over their neighborhoods’ features, implicitly specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation or depending on knowing the graph structure upfront." [[4]](https://dsgiitr.com/blogs/gat/)
-
-
-## [Simple Graph Convolutional Network (SGConv)](https://github.com/Tiiiger/SGC)
-![SGConv](https://user-images.githubusercontent.com/85202161/152112089-bb6a3444-5ddc-4f2c-a4c8-2905315f01a2.jpeg)
-
-### "SGC removes the nonlinearities and collapes the weight matrices in Graph Convolutional Networks (GCNs) and is essentially a linear model" [[5]](https://github.com/Tiiiger/SGC)
-
-
-## [Topology Adaptive Graph Convolutional Network (TAGCN)](https://medium.com/@lavenderchiang/topology-adaptive-graph-cnn-8c4dffff858e)
-![TAGCN](https://user-images.githubusercontent.com/85202161/152113038-1b62bf19-eb08-436b-9cdd-421af6e496b5.png)
-
-### "The TAGCN not only inherits the properties of convolutions in CNN for grid-structured data, but it is also consistent with convolution as defined in graph signal processing. Since no approximation to the convolution is needed, TAGCN exhibits better performance than existing spectral CNNs on a number of data sets and is also computationally simpler than other recent methods." [[6]](https://arxiv.org/abs/1710.10370)
+| Model                  | Features Used                                              | Accuracy | Positive Recall | Positive Precision | F1-Score | # of Trials |
+|------------------------|------------------------------------------------------------|------------------------------|-------------------------------------|----------------------------------------|------------------------------|----------------------------------|
+| Random Forest          | Node features                                              | **0.707**               | **0.728**                      | 0.699                                  | **0.707**               | 100                              |
+| MLP                    | Node features                                              | 0.699                        | 0.668                               | 0.714                                  | 0.699                        | 100                              |
+| K-Nearest Neighbours   | Node features                                              | 0.645                        | 0.45                                | 0.737                                  | 0.630                        | 100                              |
+| Support Vector Machine | Node features                                              | 0.693                        | 0.506                               | **0.809**                         | 0.681                        | 100                              |
+| Random Forest          | Node Features, node2vec Network Features                   | **0.766**               | 0.705                               | **0.802**                         | 0.765                        | 100                              |
+| K-Nearest Neighbours   | Node Features, node2vec Network Features                   | 0.645                        | 0.751                               | 0.620                                  | 0.640                        | 100                              |
+| Support Vector Machine | node2vec Network Features                                  | 0.780                        | **0.759**                      | 0.794                                  | **0.780**               | 100                              |
+| MLP                    | Node Features, node2vec Network Features                   | 0.744                        | 0.735                               | 0.749                                  | 0.744                        | 100                              |
+| MLP                    | node2vec Network Features                                  | 0.731                        | 0.736                               | 0.730                                  | 0.730                        | 100                              |
+| SGConv GNN             | Node features, Functional Graph                            | 0.743                        | 0.750                               | 0.746                                  | 0.741                        | 100                              |
+| TAGCN                  | Node Features, Functional Graph                            | 0.749                        | 0.706                               | 0.778                                  | 0.747                        | 10                               |
+| TAGCN                  | Node Features, node2vec Network Features, Functional Graph | 0.741                        | 0.726                               | 0.750                                  | 0.741                        | 10                               |
+| Cluster-GCN            | Node Features, Functional Graph                            | 0.726                        | 0.671                               | 0.757                                  | 0.724                        | 11                               |
+| GraphSAGE              | Node Features, Functional Graph                            | 0.714                        | 0.674                               | 0.733                                  | 0.713                        | 10                               |
+</div>
