@@ -1,4 +1,4 @@
-# Table 3: Literature-based Validation of Top Prioritized Genes
+# Supplementary Material: Literature-based Validation of Top Prioritized Genes
 *A detailed literature analysis of some of the top predicted genes associated with LUAD from the SGConv model. **Genes in bold** indicate that the result was predicted with the MLP model.*
 
 | Rank | Gene | Gene functional description and Literature review |
