@@ -1,6 +1,6 @@
 # geneDRAGNN - gene Disease pRioritizAtion using Graph Neural Networks
 
-Authors: Awni Altabaa, David Huang, Ciaran Byles-Ho, Hani Khatib, Fabian Sosa, Ting Hu
+Authors: Awni Altabaa, David Huang, Ciaran Byles-Ho, Hani Khatib, Fabian Sosa-Miranda, Ting Hu
 
 
 ## Abstract
