@@ -1,4 +1,4 @@
-# Table 3: Literature-based Validation of Top Prioritized Genes
+# Literature-based Validation of Top Prioritized Genes
 *A detailed literature analysis of some of the top predicted genes associated with LUAD from the SGConv model. **Genes in bold** indicate that the result was predicted with the MLP model.*
 
 | Rank | Gene | Gene functional description and Literature review |
@@ -31,3 +31,4 @@ Medicine, 9(18):1419–1419, 2021. doi: 10.21037/atm-21-3301.
 13.	F. Xue, Y. Jia, and J. Zhao. Overexpression of fyn suppresses the
 epithelial-to-mesenchymal transition through down-regulating pi3k/akt pathway in lung adenocarcinoma. Surgical Oncology, 33:108–117, 2020. doi: 10.1016/j.suronc.2020.02.002.
 14.	L. Yoo, A.-R. Yoon, C.-O. Yun, and K. C. Chung. Covalent isg15 conjugation to chip promotes its ubiquitin e3 ligase activity and inhibits lung cancer cell growth in response to type i interferon. Cell Death Disease, 9(2), 2018. doi: 10.1038/s41419-017-0138-9.
+
