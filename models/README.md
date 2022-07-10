@@ -25,20 +25,28 @@ In general, models trained on LS-GIN embeddings consistently outperformed the ba
 
 <div align="center">
 
-| Model                  | Features Used                                              | Accuracy | Positive Recall | Positive Precision | F1-Score | # of Trials |
-|------------------------|------------------------------------------------------------|------------------------------|-------------------------------------|----------------------------------------|------------------------------|----------------------------------|
-| Random Forest          | Node features                                              | **0.707**               | **0.728**                      | 0.699                                  | **0.707**               | 100                              |
-| MLP                    | Node features                                              | 0.699                        | 0.668                               | 0.714                                  | 0.699                        | 100                              |
-| K-Nearest Neighbours   | Node features                                              | 0.645                        | 0.45                                | 0.737                                  | 0.630                        | 100                              |
-| Support Vector Machine | Node features                                              | 0.693                        | 0.506                               | **0.809**                         | 0.681                        | 100                              |
-| Random Forest          | Node Features, node2vec Network Features                   | **0.766**               | 0.705                               | **0.802**                         | 0.765                        | 100                              |
-| K-Nearest Neighbours   | Node Features, node2vec Network Features                   | 0.645                        | 0.751                               | 0.620                                  | 0.640                        | 100                              |
-| Support Vector Machine | node2vec Network Features                                  | 0.780                        | **0.759**                      | 0.794                                  | **0.780**               | 100                              |
-| MLP                    | Node Features, node2vec Network Features                   | 0.744                        | 0.735                               | 0.749                                  | 0.744                        | 100                              |
-| MLP                    | node2vec Network Features                                  | 0.731                        | 0.736                               | 0.730                                  | 0.730                        | 100                              |
-| SGConv GNN             | Node features, Functional Graph                            | 0.743                        | 0.750                               | 0.746                                  | 0.741                        | 100                              |
-| TAGCN                  | Node Features, Functional Graph                            | 0.749                        | 0.706                               | 0.778                                  | 0.747                        | 10                               |
-| TAGCN                  | Node Features, node2vec Network Features, Functional Graph | 0.741                        | 0.726                               | 0.750                                  | 0.741                        | 10                               |
-| Cluster-GCN            | Node Features, Functional Graph                            | 0.726                        | 0.671                               | 0.757                                  | 0.724                        | 11                               |
-| GraphSAGE              | Node Features, Functional Graph                            | 0.714                        | 0.674                               | 0.733                                  | 0.713                        | 10                               |
-</div>
+| Model              | Features Used                                    | Accuracy (avg) | Accuracy (std) | Recall (avg) | Recall (std) | Precision (avg) | Precision (std) | F1 (avg) | F1 (std) | # of Trials |
+|--------------------|--------------------------------------------------|----------------|----------------|--------------|--------------|-----------------|-----------------|----------|----------|-------------|
+| Baseline Models    |                                                  |                |                |              |              |                 |                 |          |          |             |
+| RF                 | node features                                    | 0.707          | 0.027          | 0.728        | 0.037        | 0.700           | 0.030           | 0.707    | 0.027    | 100         |
+| MLP                | node features                                    | 0.699          | 0.025          | 0.668        | 0.029        | 0.714           | 0.035           | 0.699    | 0.025    | 100         |
+| SVM                | node features                                    | 0.693          | 0.022          | 0.506        | 0.040        | 0.809           | 0.039           | 0.681    | 0.024    | 100         |
+| KNN                | node features                                    | 0.645          | 0.024          | 0.451        | 0.042        | 0.737           | 0.040           | 0.630    | 0.026    | 100         |
+| Graph-Based Models |                                                  |                |                |              |              |                 |                 |          |          |             |
+| RF                 | node2vec features                                | 0.765          | 0.022          | 0.666        | 0.039        | 0.831           | 0.030           | 0.762    | 0.022    | 100         |
+| RF                 | node features, node2vec features                 | 0.766          | 0.022          | 0.705        | 0.037        | 0.803           | 0.027           | 0.765    | 0.022    | 100         |
+| MLP                | node2vec features                                | 0.747          | 0.025          | 0.751        | 0.039        | 0.746           | 0.029           | 0.747    | 0.025    | 100         |
+| MLP                | node features, node2vec features                 | 0.744          | 0.026          | 0.735        | 0.038        | 0.749           | 0.031           | 0.744    | 0.026    | 100         |
+| SVM                | node2vec features                                | 0.780          | 0.022          | 0.758        | 0.036        | 0.794           | 0.028           | 0.780    | 0.022    | 100         |
+| SVM                | node features, node2vec features                 | 0.705          | 0.021          | 0.530        | 0.036        | 0.815           | 0.033           | 0.695    | 0.022    | 100         |
+| KNN                | node2vec features                                | 0.564          | 0.017          | 0.949        | 0.023        | 0.537           | 0.010           | 0.488    | 0.029    | 100         |
+| KNN                | node features, node2vec features                 | 0.645          | 0.026          | 0.752        | 0.041        | 0.620           | 0.025           | 0.640    | 0.027    | 100         |
+| SGCN               | node features, LS-GIN network, edge features     | 0.750          | 0.019          | 0.774        | 0.080        | 0.743           | 0.034           | 0.749    | 0.019    | 11          |
+| SGCN               | node features, LS-GIN network                    | 0.743          | 0.028          | 0.750        | 0.084        | 0.746           | 0.050           | 0.741    | 0.028    | 100         |
+| GraphSAGE          | node features, LS-GIN network                    | 0.714          | 0.015          | 0.674        | 0.040        | 0.733           | 0.020           | 0.713    | 0.016    | 10          |
+| GraphSAGE          | node features, LS-GIN network, node2vec features | 0.745          | 0.020          | 0.721        | 0.047        | 0.759           | 0.027           | 0.745    | 0.021    | 16          |
+| TAGCN              | node features, LS-GIN network                    | 0.749          | 0.024          | 0.706        | 0.067        | 0.778           | 0.049           | 0.747    | 0.024    | 10          |
+| TAGCN              | node features, LS-GIN network, node2vec features | 0.741          | 0.035          | 0.726        | 0.047        | 0.750           | 0.042           | 0.741    | 0.035    | 10          |
+| Cluster-GCN        | node features, LS-GIN network, edge features     | 0.726          | 0.020          | 0.671        | 0.068        | 0.757           | 0.031           | 0.724    | 0.021    | 11          |
+
+</dev>
