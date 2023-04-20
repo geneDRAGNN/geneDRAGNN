@@ -2,6 +2,8 @@ import torch
 import torch.nn.functional as F
 import pytorch_lightning as pl
 import torch_geometric
+import wandb
+from torch_geometric.nn import GCNConv
 
 # define GNN architecture
 class GNNModel(torch.nn.Module):
@@ -40,7 +42,7 @@ class GNNModel(torch.nn.Module):
         self.convs = torch.nn.ModuleList(self.convs)
 
         self.dense1 = torch.nn.Linear(hidden_channels[-1], hidden_dense)
-        self.dense_out = torch.nn.Linear(hidden_dense, num_classes)
+        self.dense_out = torch.nn.Linear(hidden_dense, out_channels)
 
         self.dropout_rate = dropout_rate
 
@@ -93,7 +95,7 @@ class LitGNN(pl.LightningModule):
         self.loss_module = torch.nn.CrossEntropyLoss()
 
         # give example input
-        self.example_input_array = data
+        # self.example_input_array = data # TODO delete
 
     def forward(self, data, mode="train"):
         if self.model_type == "edge_attr":
@@ -166,11 +168,12 @@ class LitGNN(pl.LightningModule):
         )
 
 
-def create_SGConv_GNN(project_name, num_features, num_classes):
+def create_SGConv_GNN(model_name, num_features, num_classes):
     """creates SGConv GNN model"""
+
     GNN_conv_layer = torch_geometric.nn.SGConv
     model = LitGNN(
-        project_name,
+        model_name,
         model=None,
         GNN_conv_layer=GNN_conv_layer,
         in_channels=num_features,
@@ -182,7 +185,7 @@ def create_SGConv_GNN(project_name, num_features, num_classes):
     return model
 
 
-def create_GraphSAGE_GNN(project_name, num_features, num_classes):
+def create_GraphSAGE_GNN(model_name, num_features, num_classes):
     """creates GraphSAGE GNN model"""
 
     model_ = torch_geometric.nn.models.GraphSAGE  # base model
@@ -191,7 +194,7 @@ def create_GraphSAGE_GNN(project_name, num_features, num_classes):
     dropout = 0.2
 
     model = LitGNN(
-        project_name,
+        model_name,
         model=model_,
         jk="max",
         in_channels=num_features,
@@ -205,13 +208,13 @@ def create_GraphSAGE_GNN(project_name, num_features, num_classes):
     return model
 
 
-def create_TAG_GNN(project_name, num_features, num_classes):
+def create_TAG_GNN(model_name, num_features, num_classes):
     '''creates TAG GNN model'''
 
     GNN_conv_layer = torch_geometric.nn.TAGConv
 
     model = LitGNN(
-        project_name,
+        model_name,
         model=None,
         GNN_conv_layer=GNN_conv_layer,
         K=3,
@@ -225,13 +228,13 @@ def create_TAG_GNN(project_name, num_features, num_classes):
     return model
 
 
-def create_clusterGCN_GNN(project_name, num_features, num_classes):
+def create_clusterGCN_GNN(model_name, num_features, num_classes):
     '''creates clusterGCN GNN model'''
 
     GNN_conv_layer = torch_geometric.nn.ClusterGCNConv
 
     model = LitGNN(
-        project_name,
+        model_name,
         model=None,
         GNN_conv_layer=GNN_conv_layer,
         in_channels=num_features,
@@ -242,3 +245,11 @@ def create_clusterGCN_GNN(project_name, num_features, num_classes):
 
     return model
 
+def create_MLP(model_name, num_features, num_classes):
+    '''creates MLP model'''
+
+    model = LitGNN(model_name, model=torch_geometric.nn.models.MLP,
+                    channel_list=[num_features, 128, 128, num_classes],
+                    model_type='baseline')
+
+    return model
