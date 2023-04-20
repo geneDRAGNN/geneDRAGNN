@@ -1,0 +1,9 @@
+numpy==1.20.3
+pandas==1.1.4
+pecanpy==2.0.1
+pytorch_lightning==1.5.1
+scikit_learn==0.24.1
+torch==1.10.1+cu113
+torch_geometric==2.0.5
+tqdm==4.62.3
+wandb==0.12.9
