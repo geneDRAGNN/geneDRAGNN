@@ -5,7 +5,10 @@ import pandas as pd
 import numpy as np
 
 
-def read_data(base_path, graph_used='know', feats_type='nodeonly', label_thres='0,02'):
+def read_data(node_filepath="../data/final_data/node_node2vec_data.csv",
+              label_filepath="../data/final_data/training_labels_trials.csv",
+              edgelist_path="../data/final_data/ls-fgin_edge_list.edg",
+              feats_type='nodeonly'):
     """
     reads data (node features, edge list, labels) from local files.
 
@@ -21,13 +24,14 @@ def read_data(base_path, graph_used='know', feats_type='nodeonly', label_thres='
 
 
     # LOAD NODE DATA
+    node_dataset = pd.read_csv(node_filepath, index_col=0)
     if feats_type == 'nodeonly':
-        node_data_path = f'{base_path}/{graph_used}_graph/final_nodeonly_node_data_{graph_used}_v1.csv'
+        node_dataset = node_dataset[node_dataset.columns.drop(list(node_dataset.filter(regex='network')))]
 
-    elif feats_type == 'node+feat':
-        node_data_path = f'{base_path}/{graph_used}_graph/final_all_node_data_{graph_used}_v1.csv'
-
-    node_dataset = pd.read_csv(node_data_path, index_col=0)
+    elif feats_type == 'networkonly':
+        node_dataset = node_dataset[node_dataset.columns.drop(list(node_dataset.filter(regex='nih')))]
+        node_dataset = node_dataset[node_dataset.columns.drop(list(node_dataset.filter(regex='hpa')))]
+    
 
     # assert that all genes in dataset are unique
     assert(node_dataset.index.duplicated().sum() == 0)
@@ -43,12 +47,11 @@ def read_data(base_path, graph_used='know', feats_type='nodeonly', label_thres='
     node_dataset.drop(columns=['ensembl'], inplace=True)
 
     # LOAD LABELS
-    labels = pd.read_csv(f'{base_path}/{graph_used}_graph/labels_thres{label_thres}_trials_{graph_used}.csv', index_col=0)
+    labels = pd.read_csv(label_filepath, index_col=0)
 
     # drop label columns from node_dataset
-    label_cols_drop = ['gda_score', 'gda_score_thres0.01', 'gda_score_thres0.02', 
-                'gda_score_thres0.03', 'gda_score_thres0.04', 'gda_score_thres0.05']
-    node_dataset.drop(columns=label_cols_drop, inplace=True)
+    label_cols_drop = ['gda_score']
+    labels.drop(columns=label_cols_drop, inplace=True)
 
     # map Ensmebl index to myID in labels dataset
     myID = labels.index.map(gene_id_dict).rename('myID')
@@ -61,18 +64,16 @@ def read_data(base_path, graph_used='know', feats_type='nodeonly', label_thres='
     for label_col in [f'label_{i}' for i in range(num_label_trials)]:
         labels[label_col] = labels[label_col].astype('Int32')
 
-    # LOAD EDGE LIST
-    edge_list_path = f'{base_path}/{graph_used}_graph/final_edge_list_{graph_used}_features_v1.csv' # USING KNOWLEDGE GRAPH
-
-    edge_list = pd.read_csv(edge_list_path)
-
+    edge_list = pd.read_csv(edgelist_path, header=None, sep='\t')
+    
     # map edge list
-    edge_list.gene1 = edge_list.gene1.map(gene_id_dict)
-    edge_list.gene2 = edge_list.gene2.map(gene_id_dict)
+    edge_list.iloc[:, 0] = edge_list.iloc[:, 0].map(gene_id_dict)
+    edge_list.iloc[:, 1] = edge_list.iloc[:, 1].map(gene_id_dict)
 
     # scale edge features appropriately (they take values in the range 0-1000)
-    edge_feat_cols = edge_list.columns[2:].to_numpy()
-    edge_list[edge_feat_cols] /= 1000
+    if len(edge_list.columns) > 2:
+        edge_feat_cols = edge_list.columns[2:].to_numpy()
+        edge_list[edge_feat_cols] /= 1000
 
     return node_dataset, edge_list, labels
 
@@ -147,7 +148,7 @@ def create_data(node_dataset, edge_list, labels, label_col, test_size=0.2, val_s
     y = torch.Tensor(y).type(torch.int64)
 
     # extract edges by index
-    edge_index = torch.Tensor(edge_list[['gene1', 'gene2']].to_numpy().T).type(torch.int64)
+    edge_index = torch.Tensor(edge_list.iloc[:, :2].to_numpy().T).type(torch.int64)
 
     # extract edge features
     edge_feat_cols = edge_list.columns[2:].to_numpy()
